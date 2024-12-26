@@ -1,0 +1,186 @@
+:root {
+  --main-background: #fff;
+  --wave-color: #c1e1ff;
+  --heading: #0f2f76;
+  --text: #2e2e2e;
+  --hamburger: #0f2f76;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text);
+  background-color: var(--main-background);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 24px 16px;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  align-self: center;
+  display: none;
+}
+
+.hamburger svg {
+  width: 40px;
+}
+
+.hamburger svg path {
+  stroke: var(--hamburger);
+}
+
+nav .logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+nav .logo img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  color: var(--heading);
+  transition: color 0.3s;
+}
+
+nav .menu ul {
+  display: flex;
+  align-content: end;
+  align-items: center;
+  list-style: none;
+}
+
+nav .menu ul li {
+  margin-left: 48px;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+  font-size: 18px;
+}
+
+nav .menu ul li:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  gap: 16px;
+}
+
+.hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  margin-top: 42px;
+  color: var(--heading);
+  line-height: 55px;
+  transition: color 0.3s;
+}
+
+.hero p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+/* clock */
+
+.clockContainer {
+  margin-top: 24px;
+}
+
+.clockContainer p.clock {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 36px;
+  color: var(--heading);
+  line-height: 55px;
+  transition: color 0.3s;
+}
+
+.heroImageContainer {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.heroImageContainer img {
+  width: 100%;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 123px;
+}
+
+.wave .shape-fill {
+  fill: var(--wave-color);
+  transition: fill 0.3s;
+}
+
+.blobsContainer {
+  position: relative;
+}
+
+.blobs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(16%, -72%);
+  z-index: -1;
+}

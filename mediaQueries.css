@@ -1,0 +1,107 @@
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 36px;
+    margin-top: 32px;
+    line-height: 42px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .clockContainer {
+    margin-top: 18px;
+  }
+
+  .clockContainer p.clock {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 8px 12px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    position: relative;
+    overflow: visible;
+  }
+
+  nav .menu {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    right: 5%;
+  }
+
+  nav .menu.showMenu {
+    display: flex;
+  }
+
+  nav .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--heading);
+    padding-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  nav .menu ul li {
+    text-align: center;
+    width: 150px;
+    margin-left: 0;
+    margin-top: 8px;
+    color: var(--wave-color);
+  }
+
+  nav .menu ul li:hover,
+  nav .menu ul li:active {
+    background-color: var(--wave-color);
+    color: var(--heading);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heroIntro {
+    order: 2;
+  }
+
+  .heroImageContainer {
+    width: 290px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    margin-top: 24px;
+    line-height: 36px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .clockContainer {
+    margin-top: 16px;
+  }
+
+  .clockContainer p.clock {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
